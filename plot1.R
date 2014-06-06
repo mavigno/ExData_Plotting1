@@ -12,7 +12,7 @@ hpc$Global_active_power <- as.numeric(hpc$Global_active_power)
 # subset to required dates
 hpc <- hpc[hpc$Date=="2007-02-01"|hpc$Date=="2007-02-02",]
 # set device to file
-png("plot1.png")
+png("plot1.png",width=480,height=480)
 # plot histogram
 hist(hpc$Global_active_power,col="red",main="Global Active Power",xlab="Global Active Power (kilowatts)")
 dev.off()

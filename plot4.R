@@ -12,7 +12,7 @@ hpc$DateTime <- with(hpc,
 hpc$Date <- as.Date(hpc$Date,format="%d/%m/%Y")
 # subset to required dates
 hpc <- hpc[hpc$Date=="2007-02-01"|hpc$Date=="2007-02-02",]
-png("plot4.png")
+png("plot4.png",width=480,height=480)
 # setup 2x2 Panel and Margins 
 par(mfrow=c(2,2),mar=c(4,4,2,2))
 # first graph 

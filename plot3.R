@@ -13,7 +13,7 @@ hpc$Date <- as.Date(hpc$Date,format="%d/%m/%Y")
 # subset to required dates
 hpc <- hpc[hpc$Date=="2007-02-01"|hpc$Date=="2007-02-02",]
 # set device to file
-png("plot3.png")
+png("plot3.png",width=480,height=480)
 # plot line graph
 with(hpc,plot(DateTime,Sub_metering_1,
               type="n",

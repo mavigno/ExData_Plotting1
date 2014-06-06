@@ -9,7 +9,7 @@ hpc$DateTime <- with(hpc,strptime(paste(Date,Time),"%d/%m/%Y %H:%M:%S",tz="GMT")
 hpc$Date <- as.Date(hpc$Date,format="%d/%m/%Y")
 # subset to required dates
 hpc <- hpc[hpc$Date=="2007-02-01"|hpc$Date=="2007-02-02",]
-png("plot2.png")
+png("plot2.png",width=480,height=480)
 # plot line graph
 with(hpc,plot(DateTime,Global_active_power,
               type="n",
