@@ -1,3 +1,4 @@
+# Generate plot3.png
 Sys.setlocale("LC_ALL", 'en_US.UTF-8') # override locale to get date labels in english
 # read household data and assuming string "?" and blank as NA
 hpc <- read.csv("household_power_consumption.txt",
