@@ -18,7 +18,7 @@ png("plot4.png",width=480,height=480)
 par(mfrow=c(2,2),mar=c(4,4,2,2))
 # first graph 
 with(hpc,plot(DateTime,Global_active_power,type="n",
-              ylab="Global Active Power",
+              ylab="Global Active Power ",
               xlab=""))
 with(hpc,lines(DateTime,Global_active_power))
 # second graph 
@@ -26,7 +26,7 @@ with(hpc,plot(DateTime,Voltage,type="n",ylab="Voltage"))
 with(hpc,lines(DateTime,Voltage))
 # third graph 
 with(hpc,plot(DateTime,Sub_metering_1,type="n",
-              ylab="Energy sub metering",
+              ylab="Energy sub metering ",
               xlab=""))
 with(hpc,lines(DateTime,Sub_metering_1,col="black"))
 with(hpc,lines(DateTime,Sub_metering_2,col="red"))

@@ -14,7 +14,7 @@ png("plot2.png",width=480,height=480)
 # plot line graph
 with(hpc,plot(DateTime,Global_active_power,
               type="n",
-              ylab="Global Active Power (kilowatts)",
+              ylab="Global Active Power (kilowatts) ",
               xlab=""))
 with(hpc,lines(DateTime,Global_active_power))
 dev.off()

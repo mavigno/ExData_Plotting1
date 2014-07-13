@@ -18,7 +18,7 @@ png("plot3.png",width=480,height=480)
 # plot line graph
 with(hpc,plot(DateTime,Sub_metering_1,
               type="n",
-              ylab="Energy sub metering",
+              ylab="Energy sub metering ",
               xlab=""))
 with(hpc,lines(DateTime,Sub_metering_1,col="black"))
 with(hpc,lines(DateTime,Sub_metering_2,col="red"))
